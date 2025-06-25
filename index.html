@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nawin Sekar | Game Developer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+      color: #eee;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #1f1f1f, #111);
+      padding: 3rem 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    nav a {
+       color: #0ff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeUp 1.2s ease-in-out;
+    }
+    h2 {
+      color: #0ff;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+    .skills span {
+      background: #222;
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      display: inline-block;
+      font-size: 0.95rem;
+      transition: transform 0.3s ease;
+    }
+    .skills span:hover {
+      transform: scale(1.1);
+      background: #0ff;
+      color: #000;
+    }
+    .project {
+      background: #1e1e1e;
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 1rem;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+    .project-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0ff, #0f0);
+      animation: glow 2s infinite ease-in-out;
+      margin: auto;
+      box-shadow: 0 0 15px #0ff;
+    }
+    .project a {
+  color: #0af;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 15px #0ff; }
+      50% { box-shadow: 0 0 25px #0f0; }
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1a1a1a;
+      color: #777;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nawin Sekar</h1>
+    <p>Unity Game Developer | AR/VR Specialist</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Games</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <br>
+    <a href="Nawin Resume-2025.pdf" download style="color:#0ff;">Download Resume</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate game developer with over 3 years of experience building Unity-powered games and XR experiences. I specialize in creating immersive AR/VR content, with multiple games published on the Play Store including titles with millions of downloads. Game development is not just my profession—it's my obsession.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Unity3D</span><span>C#</span><span>Game Design</span><span>ARCore / ARKit</span><span>VR (Oculus, HoloLens)</span><span>Shader Graph</span><span>Game Physics</span><span>Performance Optimization</span><span>Addressables</span><span>Multiplatform Build</span><span>Git / GitHub</span><span>UI/UX for XR</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Game Projects</h2>
+
+    <div class="project-section">
+      <h3>iOS Projects</h3>
+      <div class="project">
+        <a href="https://apps.apple.com/in/app/drone-strike-3d-war-ar-game/id6677022093" target="_blank">Drone Strike 3D – iOS</a>
+        <p>Thrilling drone shooting experience now available for iOS users with AR mode support.</p>
+      </div>
+      <div class="project">
+        <a href="https://apps.apple.com/in/app/dr-racing-police-chase/id1659585807" target="_blank">Police Chase – iOS</a>
+        <p>Fast-paced 2D police chase game with thrilling escape mechanics and fun challenges.</p>
+      </div>
+      <div class="project">
+        <a href="https://apps.apple.com/in/app/stack-ar-game/id6503283025" target="_blank">Stack AR – iOS</a>
+        <p>Enjoy the AR stacking puzzle now on iPhones and iPads. Uses real-world space and intuitive controls.</p>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h3>Android Projects</h3>
+      <div class="project">
+        <a href="https://play.google.com/store/apps/details?id=com.gamersmonk.dronesimulator.dronestrike.droneattack.strike.dronegame.simulator" target="_blank">Drone Strike Game</a>
+        <p>AR-enhanced drone shooter with realistic physics and missions.</p>
+      </div>
+      <div class="project">
+        <a href="https://play.google.com/store/apps/details?id=com.carpark.appnextg" target="_blank">Car Parking Simulator</a>
+        <p>Precision-based driving and parking challenge across various maps.</p>
+      </div>
+      <div class="project">
+        <a href="https://play.google.com/store/apps/details?id=com.gamersmonk.parking3d.parkingmaster.droneparking.dronebuddy" target="_blank">Drone Parking AR</a>
+        <p>Utilize AR to land drones in virtual zones with real-time tracking.</p>
+      </div>
+      <div class="project">
+        <a href="https://play.google.com/store/apps/details?id=com.gamersmonk.stack.hexasort.stackball.stackinggame.puzzle.endless" target="_blank">Stack AR Game</a>
+        <p>Colorful puzzle stacking game using AR surfaces and interactive layers.</p>
+      </div>
+      <div class="project">
+        <a href="https://play.google.com/store/apps/details?id=com.quantum.ironball.actionballs.rollingadventure.game" target="_blank">Balancing Ball 3D</a>
+        <p>Navigate a metallic ball through tricky terrains and ramps.</p>
+      </div>
+      <div class="project">
+        <a href="https://play.google.com/store/apps/details?id=com.quantum.simulatorgame.drivinggame.truckgames.game" target="_blank">Bus Driving Simulator</a>
+        <p>City-based transport game with traffic logic and vehicle physics.</p>
+      </div>
+      <div class="project">
+        <a href="https://play.google.com/store/apps/details?id=com.quantum.ruler.measuretools.photoruler.measurement.arplan.measure.ARMeter.tapemeasure.ruler.heightmeasure.arruler.measuring" target="_blank">AR Measure App (5M+)</a>
+        <p>Accurate mobile AR measurement tool used globally.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Senior Unity Developer – Quantum4u App Labs</h3>
+      <p>Led the development of multiple games, including hyper-casual and AR shooters. Managed app store releases and collaborated closely with designers and testers.</p>
+    </div>
+    <div class="experience-item">
+      <h3>XR Developer – VReon Tech India</h3>
+      <p>Developed virtual reality simulations and browser-based AR tools using Unity and WebXR. Specialized in cross-platform optimization.</p>
+    </div>
+    <div class="experience-item">
+      <h3>Freelance Trainer – TERV Pro</h3>
+      <p>Trained college students across Tamil Nadu in programming and game development using Unity.</p>
+    </div>
+  </section>
+  <!-- New Mini Game: Balloon Obstacle Game -->
+<section id="minigame" style="text-align:center; padding: 4rem 2rem; background: radial-gradient(circle at top left, #1a1a1a, #0f0f0f); color: #fff;">
+  <h2 style="color:#0ff;">🎈 Mini Game: Balloon Escape</h2>
+  <p>Help the balloon fly upward by moving obstacles out of the way. Tap "Start Game" to begin!</p>
+  <canvas id="balloonGame" width="300" height="500" style="background:#111; margin-top:2rem; border:2px solid #0ff; border-radius:10px;"></canvas>
+  <p id="scoreDisplay" style="font-size: 1.2rem; margin-top: 1rem; color: #0f0;">Score: 0</p>
+  <br>
+  <button id="startBtn" style="padding:1rem 2rem; margin-top:1rem; background:#0ff; color:#000; border:none; border-radius:5px; font-weight:bold; cursor:pointer; font-size:1.1rem;">Start Game</button>
+  <script>
+    const canvas = document.getElementById('balloonGame');
+    const ctx = canvas.getContext('2d');
+    const startBtn = document.getElementById('startBtn');
+    const scoreDisplay = document.getElementById('scoreDisplay');
+
+    let balloon = { x: 140, y: 450, r: 20 };
+    let obstacles = [];
+    let gameRunning = false;
+    let score = 0;
+    let frame = 0;
+
+    function initGame() {
+      balloon = { x: 140, y: 450, r: 20 };
+      obstacles = [];
+      score = 0;
+      frame = 0;
+      gameRunning = true;
+      scoreDisplay.textContent = 'Score: 0';
+    }
+
+    function drawBalloon() {
+      const grd = ctx.createRadialGradient(balloon.x, balloon.y, 5, balloon.x, balloon.y, balloon.r);
+      grd.addColorStop(0, '#ff9999');
+      grd.addColorStop(1, '#f00');
+      ctx.beginPath();
+      ctx.arc(balloon.x, balloon.y, balloon.r, 0, Math.PI * 2);
+      ctx.fillStyle = grd;
+      ctx.fill();
+      ctx.beginPath();
+      ctx.moveTo(balloon.x, balloon.y + balloon.r);
+      ctx.lineTo(balloon.x, balloon.y + balloon.r + 20);
+      ctx.strokeStyle = '#fff';
+      ctx.stroke();
+    }
+
+    function drawObstacles() {
+      obstacles.forEach(obs => {
+        ctx.fillStyle = '#0f0';
+        ctx.fillRect(obs.x, obs.y, obs.w, obs.h);
+        ctx.beginPath();
+        ctx.moveTo(obs.x, obs.y + obs.h);
+        ctx.lineTo(obs.x + obs.w / 2, obs.y + obs.h + 10);
+        ctx.lineTo(obs.x + obs.w, obs.y + obs.h);
+        ctx.closePath();
+        ctx.fillStyle = '#ff0';
+        ctx.fill();
+      });
+    }
+
+    function updateObstacles() {
+      obstacles.forEach(obs => {
+        obs.y += 2;
+        if (!obs.passed && obs.y > balloon.y) {
+          obs.passed = true;
+          score++;
+          scoreDisplay.textContent = `Score: ${score}`;
+        }
+      });
+      obstacles = obstacles.filter(obs => obs.y < canvas.height);
+      if (frame % 40 === 0) {
+        const width = 40 + Math.random() * 80;
+        const x = Math.random() * (canvas.width - width);
+        obstacles.push({ x: x, y: 0, w: width, h: 15 });
+      }
+    }
+
+    function detectCollision() {
+      for (let obs of obstacles) {
+        if (
+          balloon.x + balloon.r > obs.x &&
+          balloon.x - balloon.r < obs.x + obs.w &&
+          balloon.y + balloon.r > obs.y &&
+          balloon.y - balloon.r < obs.y + obs.h
+        ) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    function moveBalloon(e) {
+      const rect = canvas.getBoundingClientRect();
+      const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+      balloon.x = Math.max(balloon.r, Math.min(canvas.width - balloon.r, x));
+    }
+
+    function gameLoop() {
+      if (!gameRunning) return;
+      frame++;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      updateObstacles();
+      drawObstacles();
+      drawBalloon();
+      if (detectCollision()) {
+        gameRunning = false;
+        scoreDisplay.textContent = `💥 Game Over! Final Score: ${score}`;
+        return;
+      }
+      requestAnimationFrame(gameLoop);
+    }
+
+    startBtn.addEventListener('click', () => {
+      initGame();
+      gameLoop();
+    });
+
+    canvas.addEventListener('mousemove', moveBalloon);
+    canvas.addEventListener('touchmove', moveBalloon);
+      const restartBtn = document.createElement('button');
+    restartBtn.textContent = 'Restart Game';
+    restartBtn.style.padding = '1rem 2rem';
+    restartBtn.style.marginTop = '1rem';
+    restartBtn.style.background = '#f00';
+    restartBtn.style.color = '#fff';
+    restartBtn.style.border = 'none';
+    restartBtn.style.borderRadius = '5px';
+    restartBtn.style.fontWeight = 'bold';
+    restartBtn.style.cursor = 'pointer';
+    restartBtn.style.fontSize = '1.1rem';
+    restartBtn.style.display = 'none';
+    startBtn.insertAdjacentElement('afterend', restartBtn);
+
+    restartBtn.addEventListener('click', () => {
+      restartBtn.style.display = 'none';
+      initGame();
+      gameLoop();
+    });
+
+    function showGameOver() {
+      gameRunning = false;
+      scoreDisplay.textContent = `💥 Game Over! Final Score: ${score}`;
+      restartBtn.style.display = 'inline-block';
+    }
+
+    function gameLoop() {
+      if (!gameRunning) return;
+      frame++;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      updateObstacles();
+      drawObstacles();
+      drawBalloon();
+      if (detectCollision()) {
+        showGameOver();
+        return;
+      }
+      requestAnimationFrame(gameLoop);
+    }
+</script>
+</section>
+
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/maylqzvn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>Email: <a href="mailto:nawinsekar8@gmail.com">nawinsekar8@gmail.com</a><br>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/nawin-sekar-b5b7b91b0" target="_blank">linkedin.com/in/nawin-sekar-b5b7b91b0</a></p>
+        
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nawin Sekar | Powered by Unity & Creativity</p>
+  </footer>
+</body>
+</html>
